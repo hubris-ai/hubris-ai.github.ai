@@ -85,9 +85,9 @@
             <div class="row home-content__main">
 
                 <h1>
-                We provide ML based <br>
+                We provide automated tuning <br>
                 solutions to improve your <br>
-                Database Performance
+                Applciation/Database Performances
                 </h1>
 
                 <div class="home-content__button">
@@ -145,7 +145,7 @@
                 We are part of a new upcoming startup, Hubris, formed under the umbrella of SAP Labs Entrepreneurship Program.
                 </h1>
                 <p class="lead">
-                Our product specializes in making most critical enterprise applications autonomous. It automates the tuning of a database and virtually removes the role of a DBA for the tuning operations. Thus, we guarantee our customers experience most optimal database performance at all times, no matter what scenario is being executed. This service is also available for applications running on Java runtime.
+                Our product specializes in making most critical enterprise applications autonomous. Autonomous solutions for enterprise systems enables it to perform real time system tuning to run a given workload optimally. It automates the tuning of a database/runtime and virtually reduces the dependency on an Administrator. Thus, we guarantee our customers experience most optimal application/database performance at all times, no matter what workload is being executed. The solution stack provides knob tuning and also recommends optimal plans and physical configuration based on your demands. 
                 </p>
             </div>
         </div>
@@ -154,34 +154,34 @@
 
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--planning">
-                    <h3>Planning</h3>
+                    <h3>Need for Autonomous Solutions</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                    Enterprise applications are provisioned using microservices or even monoliths get executed by a language runtime. These applications often persist its state on backing services or databases. With huge number of enterprise applications and databases being consumed, provisioned via microservices or even monoliths, it becomes almost inevitable to take care of real time needs of ephimeral workloads with limited number of database administrators, operators, solution architects, etc. Also it is very difficult for a human to keep abreast with the knowledge base from frequent releases of new versions for a given system.   
                 </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--branding">
-                    <h3>Branding</h3>
+                    <h3>Security and Privacy</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                    The tuning solution reads metrics/features and knobs form the underlying system passes it to a central tuning agent, the tuning agent reverts back with new recommendations. If your database is publicly exposed, we ask you to create technical users with limited priveleges so that we only read metadata and not actual data. However, if your database is not publicly exposed, we ask you to run our code (available on github), which reads only certain system tables and knobs and make calls to our publicly available tuning agent. The code can run as a microservice, we also have docker image for the same. As the code is publicly avaialbe you can easily verify which system tables we access.  
                 </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--implementation">
-                    <h3>Implementation</h3>
+                    <h3>Service Offering</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
-                </p>
+                    We host the tuner agents on known landscapes such as GCP, AWS, Azure, etc. You can directly hook in your production databases with the tuning agent, login to the tuning agent and check the recommendations. We also have provisions to directly apply the recommendations. However, if you are reluctant to share your production instances, we ask you to copy your production data to staging systems. After copying the data to staging, we ask you to get the worst executing queries from production system, using which we create testbeds to play on staging. Finally we read the same metris/features and knobs from staging systems and provide tuning recommendation. If you have hosted your applications and database in a Virtual Private Cloud (VPC), we ask you to run the feature reader in the same VPC, which reads the features from database and sends it to central publicly exposed tuning agent.
+               </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--documentation">
-                    <h3>Documentation</h3>
+                    <h3>Simple three step onboarding</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                    We provide a easy onboarding process with minimal complexity. In the first phase, you need to decide which database to hook in with the tuning service. We recommend to initially start with staging systems. In the second phase, you have to copy data from production to staging and get worst executing queries from production. In the third phase, using worst executing queries, you have to create a test bed. The feature reader then plays the test bed on your staging database and collects features. After which the features are aggregated and sent to the central tuning agent which generates the recommendation. The process of designing a test bed is fairly simple, which also gives you flexibility to tune your database as per the workload which you select. We also provide detailed documentation on how to copy your production data to staging. After completing the three phases, you can login to the tuning agent and check recommendations.  
                 </p>
             </div>
 
@@ -198,10 +198,10 @@
             <div class="col-full">
                 <h3 data-num="02" class="subhead">What We Do</h3>
                 <h1 class="display-1 display-1--light">
-                Instead of making human error-free,lets make machine .....
+                Instead of making human error-free, lets make machine fault resistant.
                 </h1>
                 <p class="lead lead-light">
-                Our product specialises in making most critical enterprise applications autonomous. It automates the tuning of a database and virtually removes the role of a DBA for the tuning operations. Thus, we guarantee our customers experience most optimal database performance at all times, no matter what scenario is being executed. This service is also available for applications running on Java runtime.
+                Before applying the recommendations to your live/production systems, we also provide you options to test the recommendation. We also provide recommendations about optimal plans to go for.
                 </p>
             </div>
         </div>
@@ -211,48 +211,35 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Amazon RDS</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    Amazon Relational Database Service is a distributed relational database service by Amazon Web Services. It is a web service running "in the cloud" designed to simplify the setup, operation, and scaling of a relational database for use in applications.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>GCP</h4>
+                <h4>GCP Cloud SQL</h4>
                 <p>
-                Recommending the right instance size for a customer :If your database and workloads require a smaller instance size, Our recommendations  will help you to scale down and reduce your cost. Conversely, if your workload increases then we recommend you to scale up at that precise moment.
+                    Cloud SQL is a fully managed database service that makes it easy to set up, maintain, manage, and administer your relational PostgreSQL, MySQL, and SQL Server databases in the cloud. Cloud SQL offers high performance, scalability, and convenience. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Application Tuning</h4>
+                <h4>SAP CP PostgreSQL</h4>
                 <p>
-                JATT, a HotSpot autotuner, has been designed specifically to autotune the Java Virtual Machine (JVM). JATT organizes the JVM flag into groups and finds the best combination of flags that would result in the best performance. The rationale for introducing different flag group is to reduce the search space and avoid invalid flag combinations.
+                    Consume an object-relational database with PostgreSQL on SAP Cloud Platform. Our solution stack very easily integrates with SAP CP PostgreSQL. 
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Data Security & Privacy</h4>
+                <h4>Application Tuning - JVM</h4>
                 <p>
-                    We don’t read your data or any data tables of your database.
-                    We only read the current database configurations and metrics generated during query execution.
-                    Fault resistant : Any configurations that our system recommends undergoes a strict validation which ensures your database never encounter any failure.
+                    How you tune your JVM affects the performance of WebLogic Server and your applications. Figure out which JVM for your system, changing to a different JVM, optimal heap size and garbage collection, specifying heap sizes, etc.   
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Mode of operations</h4>
+                <h4>Performance Monitor</h4>
                 <p>
-                    The customer only receives the recommended configurations, but we don’t apply on the database.
-                    This is only for trial purpose and for experiments by the customer.
-                    We don’t charge for this service and we gather feedback for improvements.
-                </p>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <h4>Performance Improvement</h4>
-                <p>
-                The client provides us, the worst performing query for his database. We formulate a load test where such queries are fired in very high frequency. We observe the performance of client database for this load test before and after our recommendations.
+                    The effectiveness of an autonomous system depends on the degree the system adopts optimal configuration with high varability of worklaods. In order to measure this, we provide a gamification model. Evaluators play a game, where the payoffs of the players depends on the performance of database. 
                 </p>
             </div>
 
@@ -361,90 +348,7 @@
 
     <!-- clients
     ================================================== -->
-    <section id="clients" class="s-clients target-section">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="04" class="subhead">Selected Clients</h3>
-                <h1 class="display-1 display-1--light">Here are some of the brands we have had the priviledge to work with.</h1>
-            </div>
-        </div>
-
-        <div class="row clients-list block-1-4 block-tab-1-3 block-mob-1-2" data-aos="fade-up">
-
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-atom.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-dropbox.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-firefox.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-github.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-mozilla.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-linux.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-ubuntu.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="images/clients/icon-sass.svg" alt="">
-                </a>
-            </div>
-
-        </div> <!-- clients-list -->
-
-    </section> <!-- end s-clients -->
-
-
-    <!-- stats
-    ================================================== -->
-    <section id="stats" class="s-stats">
-
-        <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-
-            <div class="col-block item-stats ">
-                <div class="item-stats__count">213</div>
-                <h5>Projects Completed</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">179</div>
-                <h5>Happy Clients</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">35</div>
-                <h5>Awards Received</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">2319</div>
-                <h5>Cups of Coffee</h5>
-            </div>
-
-        </div> <!-- end stats -->
-
-    </section> <!-- end s-stats -->
-
+    
 
     <!-- contact
     ================================================== -->
@@ -474,9 +378,8 @@
                 <h4>Follow Us</h4>
 
                 <ul class="contact-list">
-                    <li><a href="#0">Facebook</a></li>
-                    <li><a href="#0">Twitter</a></li>
-                    <li><a href="#0">Instagram</a></li>
+                    <li><a href="#0">Support</a></li>
+                    <li><a href="#0">Phone</a></li>
                 </ul>
             </div>
 
@@ -486,7 +389,6 @@
                 <ul class="contact-list">
                     <li><a href="mailto:#0">info@hubris.com</a></li>
                     <li><a href="tel:197-543-2345">+91 97543 2345</a></li>
-                    <li><a href="tel:197-123-9876">+91 97123 9876</a></li>
                 </ul>
             </div>
 
